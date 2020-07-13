@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <button id="print-button" onclick="printThisPage">print</button>
+
+        <script>
+            var printer = document.getElementById("print-button");
+
+            function printPage() {
+                window.print();
+            }
+
+            printer.addEventListener("click", printPage);
+        </script>
+    </body>
+</html>
